@@ -1,0 +1,24 @@
+COBRA
+
+O Cobra cria uma interface (CLI) para auxiliar a rodar os comandos do cli criando comandos específicos para ele
+
+Instalar
+> go install github.com/spf13/cobra/cobra@latest
+
+Para inicializar o Cobra
+> docker-compose up -d
+> docker-compose ps (cheking)
+> docker exec -it appproduct bash
+> cobra init --pkg-name=github.com/codeedu/go-hexagonal
+
+Resultado
+- Cria uma pasta "cmd" e o arquivo main.go
+
+Criando comandos
+> cobra add cli
+    - Vai criar um arquivod chamado cli.go dentro da pasta "cmd"
+
+Executando project com o CLI
+> go run main.go cli
+> go run main.go cli -a=create -n="Product CLI" -p=25.0
+> go run main.go cli -a=get --id=<<id_do_produto>>

@@ -1,0 +1,7 @@
+DTO
+
+Data Transfer Object
+
+- É utilizado para fazer uma transferência de dados de uma camada para outra
+- Para não passar os dados exatos que chegam da Web direto para o service, utilizamos essa camada intermediária DTO.
+    > Fazemos uma transformação dos dados antes de enviar para o service 
